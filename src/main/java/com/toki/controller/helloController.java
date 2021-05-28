@@ -10,6 +10,7 @@ public class helloController {
     public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
         System.out.println("sssss");
         System.out.println("master !");
+        System.out.println("hot!");
         return String.format("Hello %s!", name);
     }
 }
