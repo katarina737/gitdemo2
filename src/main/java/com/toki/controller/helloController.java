@@ -8,6 +8,7 @@ public class helloController {
     @GetMapping("/hello")
     @ResponseBody
     public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
+        System.out.println("sssss");
         return String.format("Hello %s!", name);
     }
 }
